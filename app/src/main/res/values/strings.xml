@@ -1,0 +1,20 @@
+<resources>
+    <string-array name="entitet">
+        <item>FBIH</item>
+        <item>RS</item>
+        <item>BDFBIH</item>
+        <item>BDRS</item>
+    </string-array>
+    <string name="app_name">Kalkulator plata</string>
+    <string name="neto_u_bruto">Neto u Bruto</string>
+    <string name="bruto_u_neto">Bruto u Neto</string>
+    <string name="kalkulator_plata">Kalkulator plata</string>
+    <string name="izracunaj">IZRAČUNAJ</string>
+    <string name="neto_plata">Neto plata</string>
+    <string name="poreska_olaksica">Poreska olakšica</string>
+    <string name="godine_staza">Godine staža</string>
+    <string name="bruto_plata">Bruto plata</string>
+    <string name="interstitial_ad_unit_id" translatable="false"></string>
+    <string name="banner_ad_unit_id" translatable="false"></string>
+    <string name="action_settings">Settings</string>
+</resources>

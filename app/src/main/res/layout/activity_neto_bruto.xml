@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NetoBruto">
+
+    <EditText
+        android:id="@+id/minuli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="@string/godine_staza"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textColorHint="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/Bruto_calc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p_olaksica" />
+
+    <Button
+        android:id="@+id/Bruto_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/izracunaj"
+        app:layout_constraintBottom_toTopOf="@+id/rezultat_bruto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/neto_unos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="@string/neto_plata"
+        android:inputType="numberDecimal"
+        android:textColorHint="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/p_olaksica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/p_olaksica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="@string/poreska_olaksica"
+        android:inputType="number"
+        android:textColorHint="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/minuli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neto_unos" />
+
+    <TextView
+        android:id="@+id/rezultat_bruto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/dropdown"
+        style="@android:style/Widget.Material.Spinner.Underlined"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#2196F3"
+        android:backgroundTintMode="src_in"
+        android:clipToPadding="false"
+        android:dropDownWidth="match_parent"
+        android:duplicateParentState="false"
+        android:fadeScrollbars="false"
+        android:spinnerMode="dropdown"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toTopOf="@+id/neto_unos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-100dp"
+        app:adSize="LARGE_BANNER"
+        app:adUnitId="@string/banner_ad_unit_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rezultat_bruto"
+        tools:ignore="MissingConstraints"></com.google.android.gms.ads.AdView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
